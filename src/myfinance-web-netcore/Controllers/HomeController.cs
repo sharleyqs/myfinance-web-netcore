@@ -16,8 +16,8 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Cadastro(HomeModel model)
     {
-      var teste = model.Nome;
-      return RedirectToAction("Index")
+      var teste  = model.Nome;
+      return RedirectToAction ("Index");
     }
 
     [HttpGet]
