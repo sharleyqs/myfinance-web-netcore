@@ -12,7 +12,15 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
+    
+    [HttpPost]
+    public IActionResult Cadastro(HomeModel model)
+    {
+      var teste = model.Nome;
+      return RedirectToAction("Index")
+    }
 
+    [HttpGet]
     public IActionResult Index()
     {
         return View();
